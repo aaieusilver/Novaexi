@@ -1,5 +1,5 @@
 # Novaexi — MVP 
-
+https://aaieusilver.github.io/Novaexi/
 Plataforma demonstrativa da startup Novaexi, desenvolvida para pitch acadêmico e validação de produto.
 
 ## Stack
