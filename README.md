@@ -33,9 +33,7 @@ manifest.webmanifest
 README.md
 ```
 
-## Publicação no GitHub Pages
 
-Mantenha todos os arquivos na raiz da branch publicada pelo GitHub Pages.
 
 ## Limitações
 
