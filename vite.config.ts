@@ -7,6 +7,8 @@ export default defineConfig({
   base: "/Novaexi/",
   plugins: [react(), tailwindcss()],
   resolve: {
-    alias: { "@": path.resolve(__dirname, "./src") }
-  }
+    alias: {
+      "@": path.resolve(process.cwd(), "src"),
+    },
+  },
 })
