@@ -1,40 +1,95 @@
-# Novaexi — Protótipo V2
+# Novaexi — Homepage + MVP React
 
-Protótipo estático, responsivo e navegável da plataforma Novaexi, desenvolvido em HTML, CSS e JavaScript puro para apresentação acadêmica e publicação no GitHub Pages.
+Plataforma demonstrativa da startup Novaexi, desenvolvida para pitch acadêmico e validação de produto.
 
-## Proposta
+## Stack
 
-A Novaexi agrega demandas ambientais dispersas, áreas rurais e parceiros técnicos em carteiras economicamente viáveis de restauração ecológica e produtiva.
+- Vite 8
+- React
+- TypeScript
+- Tailwind CSS 4
+- shadcn/ui (estrutura e componentes locais)
+- Radix UI
+- Lucide Icons
+- React Router com `HashRouter`, compatível com GitHub Pages
 
-## Recursos do protótipo
+## Estrutura do produto
 
-- Dashboard territorial com aviso explícito de dados simulados
-- Simulador de pré-match entre empresas e áreas
-- Catálogo de áreas com filtros e painel detalhado
-- Cadastro demonstrativo de áreas e demandas empresariais
-- Consórcios territoriais com simulação de participação
-- Receita Nativa interativa
-- PSA e editais identificados como demonstrações
-- Eco Plus sem transação financeira real
-- Monitoramento com exportação por impressão/PDF
-- Busca global
-- Menu responsivo com overlay
-- Acessibilidade por teclado, foco visível e preferência de movimento reduzido
-- Manifesto web e favicon
+### Homepage institucional
 
-## Estrutura
+Explica:
 
-```text
-index.html
-styles.css
-app.js
-favicon.svg
-manifest.webmanifest
-README.md
+- problema de mercado;
+- tese da Novaexi;
+- públicos conectados;
+- fluxo operacional;
+- produtos e modalidades;
+- tese de impacto;
+- chamada para entrada no MVP.
+
+### MVP
+
+A rota `#/mvp` contém:
+
+- dashboard territorial;
+- catálogo de áreas;
+- empresas demandantes;
+- consórcios territoriais;
+- monitoramento;
+- Eco Plus;
+- ferramentas interativas.
+
+### Ferramentas
+
+1. Pré-match territorial
+2. Calculadora de consórcio
+3. Classificador de intensidade de restauração
+4. Receita Nativa
+5. Estimador de indicadores ESG e operacionais
+
+Os cálculos são demonstrativos e não substituem projeto técnico, enquadramento jurídico ou aprovação ambiental.
+
+## Executar localmente
+
+```bash
+npm install
+npm run dev
 ```
 
+## Validar produção
 
+```bash
+npm run lint
+npm run build
+npm run preview
+```
 
-## Limitações
+## Publicar no GitHub Pages
 
-Os dados são simulados para fins acadêmicos e de demonstração. A plataforma não aprova compensações e não substitui diagnóstico de campo, responsabilidade técnica, análise jurídica, licenciamento ou validação pelo órgão ambiental competente.
+O projeto já contém `.github/workflows/deploy.yml`.
+
+1. Substitua os arquivos da raiz do repositório `aaieusilver/Novaexi` pelos arquivos deste projeto.
+2. Faça commit e push na branch `main`.
+3. No GitHub, abra **Settings > Pages**.
+4. Em **Source**, selecione **GitHub Actions**.
+5. Acompanhe o workflow na aba **Actions**.
+
+A URL continuará sendo:
+
+```text
+https://aaieusilver.github.io/Novaexi/
+```
+
+## Ajuste para outro repositório
+
+O arquivo `vite.config.ts` usa:
+
+```ts
+base: "/Novaexi/"
+```
+
+Se o nome do repositório mudar, altere esse valor para `/<novo-repositorio>/`.
+
+## Observação
+
+Todos os dados, empresas, projetos, editais, custos e indicadores são simulados para fins de demonstração.
