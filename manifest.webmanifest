@@ -1,9 +1,0 @@
-{
-  "name": "Novaexi",
-  "short_name": "Novaexi",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#faf7f1",
-  "theme_color": "#26372f",
-  "description": "Protótipo demonstrativo de plataforma territorial para restauração produtiva."
-}
